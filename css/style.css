@@ -1,0 +1,607 @@
+
+
+html {
+    scroll-behavior: smooth;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Montserrat', sans-serif;
+    /* color: var(--main-color); */
+}
+
+.container {
+    width: 75%;
+}
+
+img {
+    display: block;
+}
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+:root {
+    --main-color: #1c1c1c;
+    --second-color: #8f8f8f;
+    --main-font: 'Poppins', sans-serif;
+    --second-font: 'Montserrat', sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style-type: none;
+}
+
+
+
+
+
+
+/* start home */
+#home {
+    background-image: url(../imgs/bg.jpg);
+    background-position: center center;
+    background-size: cover;
+    position: relative;
+}
+
+#home .icon {
+    width: 35px;
+    height: 35px;
+    background-color: #010f18;
+    border-radius: 50%;
+    position: relative;
+}
+
+#home .layer {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-color: #010f18b6;
+}
+
+#home h5 {
+    font-size: 50px;
+    font-weight: 900;
+}
+
+#home p {
+    font-size: 80px;
+}
+
+
+#home h1::after {
+    content: " |";
+    animation-name: typing;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes typing {
+    0% {content: " |";}
+    2% {content: " L|";}
+    3% {content: " la|";}
+    5% {content: " lar|";}
+    6% {content: " larr|";}
+    8% {content: " larry|";}
+   9% {content: " larry D|";}
+   11% {content: " larry Da|";}
+   12% {content: " larry Dan|";}
+    14% {content: " larry Dani|";}
+    15% {content: " larry Danie|";}
+    17% {content: " larry Daniel|";}
+    18% {content: " larry Daniels|";}
+    20% {content: " larry Daniel|";}
+    21% {content: " larry Danie|";}
+    23% {content: " larry Dani|";}
+    24% {content: " larry Dan|";}
+    26% {content: " larry Da|";}
+    27% {content: " larry D|";}
+    29% {content: " larry |";}
+    30% {content: " larr|";}
+    32% {content: " lar|";}
+    33% {content: " la|";}
+    35% {content: " l|";}
+    37% {content: " |";}
+    39% {content: " D|";}
+    40% {content: " De|";}
+    42% {content: " Dev|";}
+    43% {content: " Deve|";}
+    45% {content: " Devel|";}
+    46% {content: " Develo|";}
+    48% {content: " Develop|";}
+    49% {content: " Develope|";}
+    51% {content: " Developer|";}
+    52% {content: " Develope|";}
+    54% {content: " Develop|";}
+    56% {content: " Develo|";}
+    58% {content: " Devel|";}
+    60% {content: " Deve|";}
+    62% {content: " Dev|";}
+    64% {content: " De|";}
+    66% {content: " D|";}
+    68% {content: " |";}
+    70% {content: " D|";}
+    72% {content: " De|";}
+    74% {content: " Des|";}
+    76% {content: " Desi|";}
+    78% {content: " Desig|";}
+    80% {content: " Design|";}
+    82% {content: " Designe|";}
+    84% {content: " Designer|";}
+    86% {content: " Designe|";}
+    88% {content: " Design|";}
+    90% {content: " Desig|";}
+    92% {content: " Desi|";}
+    94% {content: " Des|";}
+    96% {content: " De|";}
+    98% {content: " D|";}
+    100% {content: " |";}
+}
+
+/* end home */
+
+/* start nav */
+
+#nav .nav-link {
+    color: white;
+}
+
+#nav .nav-link:hover {
+    color: white;
+}
+#nav {
+    background-color: var(--main-color) !important;
+    /* z-index: 1000; */
+}
+/* end nav */
+
+/* start about */
+
+
+
+#about .photo-layer {
+    position: relative;
+}
+
+#about .photo-layer:After {
+    content: '';
+    top: 15%;
+    right: 15%;
+    width: 90%;
+    height: 90%;
+    position: absolute;
+    background-image: url(../imgs/dots.png);
+    z-index: -1;
+}
+
+#about h3 {
+    font-family: var(--second-font);
+}
+
+#about p {
+    color: var(--second-color);
+}
+
+.progress-bar {
+    background-color: var(--main-color);
+    position: relative;
+}
+
+.progress-bar::after {
+    content: "95%";
+    width: 100%;
+    height: 50%;
+    position: absolute;
+    left: 95%;
+}
+
+.part-2 {
+    background-color: var(--main-color);
+    position: relative;
+}
+
+.part-2::after {
+    content: "80%";
+    width: 100%;
+    height: 50%;
+    position: absolute;
+    left: 94%;
+}
+
+.part-3 {
+    background-color: var(--main-color);
+    position: relative;
+}
+
+.part-3::after {
+    content: "90%";
+    width: 100%;
+    height: 50%;
+    position: absolute;
+    left: 94%;
+}
+
+
+.progress,
+.progress-stacked {
+    --bs-progress-height: 30px;
+}
+
+#about .btn-one {
+    padding: 10px 30px;
+    background-color: var(--main-color);
+    color: white;
+    border: 1px solid var(--main-color);
+    transition: 0.3s;
+}
+
+#about .btn-one:hover {
+    background-color: white;
+    color: #010f18;
+}
+
+#about .btn-two {
+    padding: 10px 30px;
+    background-color: white;
+    color: #010f18;
+    border: 1px solid var(--main-color);
+    transition: 0.3s;
+}
+
+#about .btn-two:hover {
+    background-color: var(--main-color);
+    color: white;
+}
+
+
+
+
+/* end about */
+
+/* start services */
+
+#Services {
+    background-color: #f7f7f7;
+}
+
+#Services h3 {
+    position: relative;
+    z-index: 6;
+}
+
+#Services h3:after {
+    content: '';
+    background-image: url(../imgs/dots.png);
+    width: 100%;
+    height: 100%;
+    top: 30%;
+    right: 50%;
+    /* bottom: -15px; */
+    transform: translateX(50%);
+    position: absolute;
+    z-index: -1;
+    color: white;
+}
+
+#Services p {
+    color: var(--second-color);
+}
+
+#Services .icon-Services {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-color: #d4d4d4;
+    transition: 0.3s;
+}
+
+#Services .iteam-Services:hover .icon-Services {
+    background-color: #1c1c1c;
+    color: white;
+}
+
+/* end services */
+
+/* start Portfolio. */
+
+#Portfolio h3 {
+    position: relative;
+    z-index: 6;
+}
+
+#Portfolio h3:after {
+    content: '';
+    background-image: url(../imgs/dots.png);
+    width: 100%;
+    height: 100%;
+    top: 30%;
+    right: 50%;
+    /* bottom: -15px; */
+    transform: translateX(50%);
+    position: absolute;
+    z-index: -1;
+    color: white;
+}
+
+
+
+
+#Portfolio .iteam {
+    position: relative;
+}
+
+#Portfolio .Portfolio-layer {
+    background-color: white;
+    position: absolute;
+    top: 10%;
+    left: 5px;
+    right: 5px;
+    bottom: 5px;
+    opacity: 0;
+    transition: all 0.3s;
+}
+
+#Portfolio .iteam:hover .Portfolio-layer {
+    top: 5px;
+    opacity: 1;
+}
+
+
+#Portfolio .icon-border {
+    width: 35px;
+    height: 35px;
+    background-color: var(--main-color);
+    border-radius: 50%;
+    transition: 0.6s;
+}
+
+#Portfolio .icon-border {
+    color: white;
+}
+
+
+#Portfolio .icon-border:hover{
+    background-color: white;
+    border: 1px solid var(--main-color);
+    color: var(--main-color);
+}
+.tab-content {
+    color: var(--main-color);
+}
+
+#Portfolio .nav-link{
+    color: var(--main-color);
+}
+
+
+
+
+
+
+
+/* end Portfolio. */
+
+
+/* start Testimonials */
+#Testimonials{
+    background-color: #f7f7f7;
+}
+#Testimonials h3 {
+    position: relative;
+    z-index: 6;
+}
+
+#Testimonials h3:after {
+    content: '';
+    background-image: url(../imgs/dots.png);
+    width: 100%;
+    height: 100%;
+    top: 30%;
+    right: 50%;
+    /* bottom: -15px; */
+    transform: translateX(50%);
+    position: absolute;
+    z-index: -1;
+    color: white;
+}
+
+
+#Testimonials .carousel-inner img {
+     width: 10%;
+    border-radius: 50%;
+}
+#Testimonials .carousel-indicators {
+    position: static;
+}
+
+#Testimonials
+ .carousel-indicators [data-bs-target] {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #1c1c1c;
+ }
+
+ @media screen and (min-width:0px) and (max-width:567px) {
+    #Testimonials .carousel-inner img {
+        width: 25%;
+    }
+ }
+
+ @media screen and (min-width:567px) and (max-width:992px) {
+    #Testimonials .carousel-inner img {
+        width: 20%;
+    }
+ }
+
+ @media screen and (min-width:992px) and (max-width:1200px) {
+    #Testimonials .carousel-inner img {
+        width: 15%;
+    }
+ }
+
+ @media screen and (min-width:1200px) and (max-width:1400px) {
+    #Testimonials .carousel-inner img {
+        width: 7%;
+    }
+ }
+
+/* end Testimonials */
+
+/* start icon */
+
+
+/* end icon */
+
+
+/* start our team */
+#our-team {
+    background-color: #f7f7f7;
+}
+
+#our-team h3 {
+    position: relative;
+    z-index: 6;
+}
+
+#our-team h3:after {
+    content: '';
+    background-image: url(../imgs/dots.png);
+    width: 100%;
+    height: 100%;
+    top: 30%;
+    right: 50%;
+    /* bottom: -15px; */
+    transform: translateX(50%);
+    position: absolute;
+    z-index: -1;
+    color: white;
+}
+
+#our-team .card {
+    background-color: #2b2b2b;
+    color: white;
+    border: 0px solid transparent;
+}
+#our-team .div-layer {
+    overflow: hidden;
+    position: relative;
+}
+#our-team .our-team-layer {
+background-color: white;
+position: absolute;
+top: 5px;
+left: 5px;
+right: 5px;
+bottom: 5px;
+opacity: 0;
+transform: rotateY(180deg) scale(0.5);
+transition: all 0.6s;
+}
+
+#our-team .card:hover .our-team-layer{
+    opacity: 1;
+    transform: rotateY(360deg) scale(1);
+    
+}
+#our-team .card img  {
+    transition: 0.5s;
+}
+#our-team .card:hover img {
+    transform: scale(1.2);
+}
+#our-team .icons {
+    width: 40px;
+    height: 40px;
+    background-color: #010f18;
+    border-radius: 50%;
+    transition: 0.5s;
+}
+
+#our-team .icons:hover  {
+background-color: white;
+color: #010f18; 
+border: 1px solid #010f18;
+}
+
+
+/* end our team */
+
+/* start contact */
+#Contact h3 {
+    position: relative;
+    z-index: 6;
+}
+
+#Contact h3:after {
+    content: '';
+    background-image: url(../imgs/dots.png);
+    width: 100%;
+    height: 100%;
+    top: 30%;
+    right: 50%;
+    /* bottom: -15px; */
+    transform: translateX(50%);
+    position: absolute;
+    z-index: -1;
+    color: white;
+}
+
+#Contact .icon-contact {
+    width: 70px;
+    height: 70px;
+    background-color: #adacac;
+    border-radius: 50%;
+    transition: all 0.5s;
+}
+
+#Contact .third-class:hover .icon-contact {
+    background-color: #010f18;
+    color: white;
+}
+
+#Contact input {
+    background-color: #d8d8d8;
+}
+#Contact textarea {
+    background-color: #d8d8d8;
+    height: 250px;
+}
+
+#Contact .btn-one {
+    padding: 10px 45px;
+    background-color: var(--main-color);
+    color: white;
+    border: 1px solid var(--main-color);
+    transition: 0.3s;
+}
+
+#Contact .btn-one:hover {
+    background-color: white;
+    color: #010f18;
+}
+/* end contact */
+
+/* start footer */
+
+#footer {
+    background-color: #1c1c1c;
+}
+/* end footer */
